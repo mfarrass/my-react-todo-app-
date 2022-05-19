@@ -1,32 +1,23 @@
-import ToDoList from "./Components/TodoList";
+import TodoList from "./Components/TodoList/TodoList";
+import React, { useState } from "react";
 
 function App() {
-
-  const items = [
-    {
-     id: 1,
-     text: 'Membuang sampah',
-     completed: false
-   },
-   {
-     id: 2,
-     text: 'Membuat roti',
-     completed: false
-   },
-   {
-     id: 3,
-     text: 'Belajar React',
-     completed: false
-   }
- ];
-
- const title = 'Things to do';
-
-
+  const [items, setItems] = useState([]);
+  const addNewItem = (text) => {
+    setItems((items) => {
+      const nextId = items.length + 1;
+      const newItem = {
+        id: nextId,
+        text: text,
+      };
+      return [...items, newItem];
+    });
+  };
+  const title = "Things to do";
   return (
     <div className="container">
       <div className="row">
-        <ToDoList items={items} title={title} />
+        <TodoList items={items} title={title} addNewItem={addNewItem} />
       </div>
     </div>
   );
