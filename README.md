@@ -1,1 +1,1 @@
-Berikut adalah project latihan Binar Academy x Kampus Merdeka FEJS-2
+Project latihan Binar Academy x Kampus Merdeka FEJS-2
