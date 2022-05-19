@@ -30,14 +30,6 @@ body {
   background-color: #f4fce8;
   margin: 0px, -20px, -10px, -20px;
   padding: 10px 20px;
-  /*
-    border atas berwarna #dddddd, tanpa border kanan, kiri, & bawah
-    warna background #f4ce8
-    margin kanan & kiri -20px
-    margin atas 0
-    margin bawah -10px
-    padding vertikal 10px, horizontal 20px
-  */
 }
 
 .mark-all-done {
