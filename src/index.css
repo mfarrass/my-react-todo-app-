@@ -6,11 +6,11 @@ body {
 
 .todo-list {
   position: relative;
-  margin: 60px auto;
+  margin: 30px auto;
   background-color: #ffffff;
   width: 600px;
   padding: 20px 20px 10px 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   border-color: #dddddd;
 }
 
@@ -41,4 +41,19 @@ body {
 
 .add-todo {
   margin: 10px 0px;
+}
+
+.page-controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px 0;
+}
+
+.page-btn {
+  border: 0;
+  background: #333333;
+  color: #ffffff;
+  margin: 0 15px;
 }
